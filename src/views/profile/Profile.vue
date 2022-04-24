@@ -1,6 +1,6 @@
 <template>
   <div>
-    <scroll class="content">
+    <scroll class="content" key="ProfileScroll">
       <ul>
         <li>个人信息1</li>
         <li>个人信息2</li>
