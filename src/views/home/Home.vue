@@ -24,7 +24,8 @@
         <home-swiper
           :banners="banners"
           @swiperImageLoad="swiperImageLoad"
-        ></home-swiper>
+        >
+          </home-swiper>
           <recommend-view :recommends="recommends"></recommend-view>
           <feature-view></feature-view>
           <tab-control
@@ -167,11 +168,11 @@ export default {
     console.log("home destroyed");
   },
   activated() {
-    this.$refs.scroll.scrollTo(0, this.saveY, 0)
-    this.$refs.scroll.refresh() 
+    this.$refs.scroll.scrollTo(0, this.saveY, 0);
+    this.$refs.scroll.refresh();
   },
   deactivated() {
-    this.saveY =  this.$refs.scroll.getScrollY();
+    this.saveY = this.$refs.scroll.getScrollY();
   }
 };
 </script>

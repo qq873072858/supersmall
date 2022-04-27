@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 <template>
     <div id="hy-swiper">
       <div class="swiper" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd">
@@ -15,7 +14,6 @@
 </template>
 
 <script>
-/* eslint-disable no-mixed-spaces-and-tabs */
 	export default {
 		name: "Swiper",
     props: {
@@ -165,7 +163,7 @@
         this.setTransform(moveDistance);
       },
 
-      touchEnd: function () {
+      touchEnd: function (e) {
         // 1.获取移动的距离
         let currentMove = Math.abs(this.distance);
 
